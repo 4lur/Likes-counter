@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MAGNO">
+    <title>Contador de Likes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .like-container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #likeButton {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        #likeButton:hover {
+            background-color: #005f73;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        #likeCount {
+            font-weight: bold;
+            font-size: 24px;
+            color: #008CBA;
+        }
+    </style>
+</head>
+<body>
+    <div class="like-container">
+        <button id="likeButton">Like</button>
+        <p>Likes: <span id="likeCount">0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
